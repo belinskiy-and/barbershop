@@ -1,0 +1,323 @@
+:root {
+    /* Fonts */
+    --main-font-family: "Open Sans", sans-serif;
+    --title-fonts-family: Raleway, sans-serif;
+
+    /* Content text colors */
+    --accent-color: #FF6C00;
+    --primary-text-color: #555555;
+    --secondary-text-color: #9DA4BD;
+    --tertiary-text-color: #303030;
+
+    /* Pretitle text colors */
+    --primary-pretitle-color: rgba(157, 164, 189, 0.6);
+    --secondary-pretitle-color: #303030;
+
+    /* Title text colors */
+    --primary-title-color: #FFFFFF;
+    --secondary-title-color: #303030;
+
+    /* Aftertitle text color */
+    --primary-aftertitle-color: #9DA4BD;
+    --secondary-aftertitle-color: #555555;
+
+    /* Link text colors */
+    --primary-link-color: #FFFFFF;
+    --secondary-link-color: #9DA4BD;
+
+    /* Button text colors */
+    --primary-button-color: #FFFFFF;
+    --secondary-button-color: #303030;
+}
+
+/* --------------- GLOBAL STYLES --------------- */
+
+body {
+    font-family: var(--main-font-family);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: var(--primary-button-color);
+
+    cursor: pointer;
+}
+
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;    
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--primary-pretitle-color);
+}
+
+.title {
+    font-family: var(--title-fonts-family);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--primary-title-color);
+}
+
+.after-title {    
+    font-size: 18px;
+    line-height: 1.67;    
+    letter-spacing: 0.02em;
+
+    color: var(--primary-aftertitle-color);
+}
+
+/* --------------- HEADER STYLES --------------- */
+
+.header {
+    /* ВРЕМЕННО */
+    background-color: #555555;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--primary-link-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+/* --------------- HERO STYLES --------------- */
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    letter-spacing: 0.2em;
+
+    color: #303030;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: var(--accent-color);
+}
+
+.hero-right {
+    /* ВРЕМЕННО */
+    background-color: #555555;
+}
+
+.hero-title {
+    font-size: 72px;
+    line-height: 1.18;
+}
+
+/* --------------- ABOUT SECTION STYLES --------------- */
+
+.about .pre-title {
+    color: var(--secondary-pretitle-color);
+}
+
+.about .title {
+    color: var(--secondary-title-color);
+}
+
+.about .after-title {
+    color: var(--secondary-aftertitle-color);
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.67;    
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+}
+
+.about .button {
+    color: var(--secondary-button-color);
+}
+
+/* --------------- PRICES SECTION STYLES --------------- */
+
+.prices {
+    /* ВРЕМЕННО */
+    background-color: #555555;
+}
+
+.prices-service {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+}
+
+.prices-price {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+}
+
+/* --------------- ADVANTAGES SECTION STYLES --------------- */
+
+.advantages-count {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    letter-spacing: 0.05em;
+
+    color: var(--tertiary-text-color);
+}
+
+.advantages-description {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+
+    color: var(--tertiary-text-color);
+}
+
+.advantages .pre-title {
+    color: var(--secondary-pretitle-color);
+}
+
+.advantages .title {
+    color: var(--secondary-title-color);
+}
+
+.advantages .after-title {
+    color: var(--secondary-aftertitle-color);
+}
+
+/* --------------- TEAM SECTION STYLES --------------- */
+
+.team .pre-title {
+    color: var(--secondary-pretitle-color);
+}
+
+.team .title {
+    color: var(--secondary-title-color);
+}
+
+.team-name {
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.02em;
+
+    color: var(--tertiary-text-color);
+}
+
+.team-position {
+    font-size: 14px;
+    line-height: 1.36;               
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+}
+
+/* --------------- GALLERY SECTION STYLES --------------- */
+
+.gallery .pre-title {
+    color: var(--secondary-pretitle-color);
+}
+
+/* --------------- ONLINE SECTION STYLES --------------- */
+
+.online {
+    /* ВРЕМЕННО */
+    background-color: #555555;
+}
+
+/* --------------- CONTACTS SECTION STYLES --------------- */
+
+.contacts {
+    /* ВРЕМЕННО */
+    background-color: #555555;
+}
+
+.contacts .pre-title {
+    color: #ffffff;
+}
+
+.contacts-address {
+    font-style: normal;        
+    font-size: 18px;
+    line-height: 1.37;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+}
+
+.contacts-link {
+    font-size: 18px;
+    line-height: 1.67;    
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+}
+
+.contacts-time-work {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color)
+}
+
+/* --------------- FOOTER STYLES --------------- */
+
+.footer-copy {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: var(--secondary-text-color);
+}
+
+.footer-link {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;            
+        letter-spacing: 0.2em;
+    
+        color: var(--tertiary-text-color);
+}
